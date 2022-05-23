@@ -12,6 +12,10 @@ export default defineNuxtConfig({
       },
     },
   },
-
   css: ["~/assets/css/tailwind.css"],
+  generate: {
+    routes: ["/"],
+  },
+  ssr: false,
+  target: "static",
 });

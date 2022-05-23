@@ -15,6 +15,7 @@ module.exports = {
       blue: "#00D1FF",
       headerBlue: "#171D1F",
       pureWhite: "#FFFFFF",
+      test: "#555555",
     },
     fontFamily: {
       body: ["Inter", "sans-serif"],

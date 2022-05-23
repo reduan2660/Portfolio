@@ -66,6 +66,7 @@
 
       <div class="grid sm:grid-cols-2 gap-28 mt-28 sm:px-20">
         <div
+          data-aos="fade-up"
           v-for="project in projects"
           :key="project.id"
           :class="

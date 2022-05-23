@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center bg-black text-white font-body font-medium"
+    class="flex flex-col items-center bg-black text-white font-body font-medium overflow-hidden"
   >
     <div
       id="Intro"
@@ -59,10 +59,31 @@
     </div>
     <separator />
 
+    <div id="Project">
+      <div class="md:col-span-2 text-center text-3xl md:text-4xl select-none">
+        Project Showcase
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-28 mt-28 sm:px-20">
+        <div
+          v-for="project in projects"
+          :key="project.id"
+          :class="
+            project.id == projects.length && projects.length % 2 == 1
+              ? 'flex flex-col items-center justify-start px-12 sm:px-96 text-center sm:col-span-2 '
+              : 'flex flex-col items-center justify-start px-12 sm:px-0 text-center'
+          "
+        >
+          <project :detail="project"></project>
+        </div>
+      </div>
+    </div>
+
+    <separator />
     <div id="Reach-me">
       <div
         data-aos="fade-up"
-        class="grid grid-cols-1 sm:grid-cols-2 gap-y-20 md:gap-20 md:gap-x-40 mb-8"
+        class="grid grid-cols-1 sm:grid-cols-2 gap-y-20 md:gap-20 md:gap-x-40 mb-8 select-none"
       >
         <div
           data-aos-anchor-placement="top-bottom"
@@ -141,6 +162,75 @@ export default defineComponent({
   created() {
     AOS.init();
   },
-  setup() {},
+  data() {
+    return {
+      projects: [
+        {
+          id: 1,
+          title: "Journal",
+          description: [
+            "A blog application with proper authorization & authentication, crud, comment & many more.",
+            "Made with django & nuxt.",
+          ],
+          live: "https://blog.alvereduan.me/",
+          repo: "https://github.com/reduan2660/Journal",
+          imageSRC: "Journal.png",
+          alt: "Journal",
+        },
+
+        {
+          id: 2,
+          title: "Rubfs",
+          description: [
+            "A application which solves a 2x2x2 rubiks cube with BFS to get the idea of bfs.",
+            "Made with Nuxt & ThreeJS.",
+          ],
+          live: "#",
+          repo: "#",
+          imageSRC: "Rubfs.png",
+          alt: "Rubfs",
+        },
+
+        {
+          id: 3,
+          title: "Sorting Visulaization",
+          description: [
+            "A software to better visualize different sorting techniques to help get the ideas of sorting mechanism.",
+            "Made with Vanilla Javascript.",
+          ],
+          live: "https://reduan2660.github.io/Sort/",
+          repo: "https://github.com/reduan2660/Sort",
+          imageSRC: "Sort.png",
+          alt: "Sorting Visulaization",
+        },
+
+        {
+          id: 4,
+          title: "Eratosthenes",
+          description: [
+            "A software to better visualize how to find prime numbers using eratosthenes algorithm.",
+            "Made with Vanilla Javascript.",
+          ],
+          live: "https://reduan2660.github.io/Eratosthenes/",
+          repo: "https://github.com/reduan2660/Eratosthenes",
+          imageSRC: "Eratosthenes.png",
+          alt: "Eratosthenes",
+        },
+
+        {
+          id: 5,
+          title: "Exam Management",
+          description: [
+            "A software to manage exams where teachers can create exams and students can participate in it.",
+            "Made for college with Java & JavaFX.",
+          ],
+          live: "#",
+          repo: "https://github.com/reduan2660/Exam-Management",
+          imageSRC: "ExamManagement.png",
+          alt: "Exam Management",
+        },
+      ],
+    };
+  },
 });
 </script>

@@ -3,6 +3,11 @@
     class="flex flex-col items-center bg-black text-white font-body font-medium overflow-hidden"
   >
     <div
+      class="h-32 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100"
+    >
+      <div class="h-64"></div>
+    </div>
+    <div
       id="Intro"
       class="select-none grid grid-cols-4 md:grid-cols-2 gap-y-20 md:gap-y-48 pt-12 md:pt-48 px-6 text-xl md:text-4xl"
     >

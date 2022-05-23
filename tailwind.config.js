@@ -22,5 +22,8 @@ module.exports = {
       display: ["Lobster", "cursive", "serif"], // Ensure fonts with spaces have " " surrounding it.
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
+  variants: {
+    scrollbar: ["dark"],
+  },
 };

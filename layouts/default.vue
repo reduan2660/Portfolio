@@ -5,7 +5,9 @@
     <div class="underline underline-offset-4 mt-2 sm:mt-4 sm:text-lg">
       <a href="#Projects">Projects</a>
     </div>
-    <div class="text-2xl sm:text-5xl"><a href="#Intro">AlveReduan</a></div>
+    <div class="text-2xl sm:text-5xl animate__animated animate__flash">
+      <a href="#Intro">AlveReduan</a>
+    </div>
     <div class="underline underline-offset-4 mt-2 sm:mt-4 sm:text-lg">
       <a href="#Reach-me">Reach me</a>
     </div>
@@ -13,3 +15,11 @@
   <slot />
   <div class="footer"></div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import "animate.css";
+export default defineComponent({
+  setup() {},
+});
+</script>

@@ -8,25 +8,24 @@
     >
       <div></div>
       <div class="col-span-3 md:col-span-1 md:col-start-2">
-        Student, BSc Hon’s (Ongoing)<br />
+        <span class="font-semibold">Student</span>, BSc Hon’s (Ongoing)<br />
         University of Dhaka
       </div>
 
-      <div class="col-span-3 md:col-span-1 md:text-right">
+      <div class="col-span-3 md:col-span-1 text-right">
         I love to develop softwares. <br />
         I use <span class="font-semi-bold text-blue"> django </span>to build web
         backend.
       </div>
       <div></div>
 
-      <div class=""></div>
+      <div></div>
       <div class="col-span-3 md:col-span-1">
         <span class="font-semi-bold text-blue">Vue</span> &
         <span class="font-semi-bold text-blue">Nuxt</span> are my first choices
         for building front end stuffs.
       </div>
-
-      <div class="col-span-3 md:col-span-1 md:text-right">
+      <div data-aos="fade-right" class="col-span-3 md:col-span-1 text-right">
         I try hard to solve problems efficiently.<br />
         I participate in
         <span class="font-semi-bold text-blue">Comeptitive Programming</span>.
@@ -34,19 +33,23 @@
       <div></div>
 
       <div></div>
-      <div class="col-span-3 md:col-span-1">
+      <div data-aos="fade-left" class="col-span-3 md:col-span-1">
         I designed and developed secure and scalable architecture on
         <span class="font-semi-bold text-blue">AWS</span>
         .
       </div>
 
-      <div class="col-span-3 md:col-span-1 md:text-right">
+      <div data-aos="fade-right" class="col-span-3 md:col-span-1 text-right">
         I love challenging problems<br />
         & to Build Beautiful Solutions.
       </div>
       <div></div>
 
-      <div class="col-span-4 md:col-span-2 text-base md:text-2xl text-center">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        class="col-span-4 md:col-span-2 text-base md:text-2xl text-center"
+      >
         For a detailed description,<a
           href="https://drive.google.com/file/d/1-Wgbkt-Slj1d501_C6XoL5x4SqX4PLN7/view?usp=sharing"
         >
@@ -57,12 +60,18 @@
     <separator />
 
     <div id="Reach-me">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-20 md:gap-20 mb-8">
-        <div class="md:col-span-2 text-center text-3xl md:text-5xl">
+      <div
+        data-aos="fade-up"
+        class="grid grid-cols-1 sm:grid-cols-2 gap-y-20 md:gap-20 md:gap-x-40 mb-8"
+      >
+        <div
+          data-aos-anchor-placement="top-bottom"
+          class="md:col-span-2 text-center text-3xl md:text-4xl"
+        >
           Reach me
         </div>
 
-        <div class="text-3xl md:text-4xl text-center mt-5">
+        <div class="text-2xl md:text-3xl text-center mt-5">
           If you’ve something to share <br />
           you could
           <a href="mailto:contact@alvereduan.me"
@@ -70,7 +79,7 @@
           >
         </div>
 
-        <div class="text-3xl md:text-4xl text-center md:mt-5">
+        <div class="text-2xl md:text-3xl text-center md:mt-5">
           I live in Dhaka, Bangladesh. <br />
           DM me
           <a target="_blank" href="https://www.facebook.com/reddddddddd9/">
@@ -121,3 +130,17 @@
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+export default defineComponent({
+  created() {
+    AOS.init();
+  },
+  setup() {},
+});
+</script>

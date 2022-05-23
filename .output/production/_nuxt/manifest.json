@@ -1,0 +1,33 @@
+{
+  "node_modules/nuxt/dist/app/entry.mjs": {
+    "file": "entry-60ec2731.mjs",
+    "src": "node_modules/nuxt/dist/app/entry.mjs",
+    "isEntry": true,
+    "dynamicImports": [
+      "pages/index.vue",
+      "layouts/default.vue"
+    ],
+    "css": [
+      "entry.79eacadb.css"
+    ]
+  },
+  "pages/index.vue": {
+    "file": "index-70aa6182.mjs",
+    "src": "pages/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "layouts/default.vue": {
+    "file": "default-26b0b349.mjs",
+    "src": "layouts/default.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ],
+    "css": [
+      "default.b069e212.css"
+    ]
+  }
+}
